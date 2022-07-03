@@ -10732,10 +10732,10 @@ dfn {
     font-style: italic
 }
 
-mark {
+/* mark {
     background: $theme-warning;
     color: $monochrome-8
-}
+} */
 
 small {
     font-size: 80%
@@ -10860,7 +10860,7 @@ input[type=search]::-webkit-search-decoration {
 }
 
 fieldset {
-    border: 1px solid $monochrome-2;
+    border: 1px solid ;
     margin: 0 2px;
     padding: .35em .625em .75em
 }
@@ -12149,7 +12149,6 @@ th {
     background-color: #696563;
     color: #fff;
     margin-bottom: 25px;
-    h2: , h3, h4;
     font-weight: bolder;
     font-size: 17px;
     line-height: 23px
@@ -14365,7 +14364,6 @@ th {
     color: #696563
 }
 
-@charset "UTF-8";
 
 /*!
 * animate.css -http://daneden.me/animate
@@ -19546,6 +19544,7 @@ th {
 .about-intro {
     width: 90%;
     padding-right: 10%;
+    padding-top: 3%;
     position: relative
 }
 
@@ -19601,9 +19600,9 @@ th {
 
 .about-vision {
     width: 80%;
-    padding: 0 10%;
-    margin-top: 3%;
-    margin-bottom: 10%
+    padding: 10% 10% 0;
+    /* margin-top: 3%; */
+    /* margin-bottom: 5% */
 }
 
 .about-vision .vision-item {
@@ -21328,7 +21327,6 @@ textarea:focus {
     }
 }
 
-@charset "UTF-8";
 
 * {
     font-family: 'Cairo', sans-serif;

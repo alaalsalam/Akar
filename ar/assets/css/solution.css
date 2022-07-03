@@ -8668,6 +8668,8 @@ label.panel-block:hover {
 
 @media screen and (max-width:768px) {
 
+
+
     .column.is-full-mobile,
     .column.is-narrow-mobile {
         -ms-flex: none;
@@ -22761,5 +22763,13 @@ select {
         padding-left: 7%;
         line-height: 1;
         margin-bottom: 20%
+    }
+}
+@media (max-width: 800px) {
+    .tabstitle:first-child {
+        display: none !important;
+    }
+    .solutions-right h2{
+        height: 170px;
     }
 }
