@@ -68,3 +68,21 @@
 })(window);
 
 })(window);
+// // document.addEventListener("load", hide_c)
+// function hide_c(){
+// 	var script = document.createElement("script");
+// 	script.innerHTML = `
+// 	var chs = document.querySelectorAll('iframe[title="chat widget"]');
+// 	console.log(chs);
+// 	`;
+// }
+// document.onreadystatechange = () => {
+// 	if (document.readyState === 'complete') {
+// 	  // document ready
+// 	  hide_c();
+// 	}
+//   };
+// if (document.readyState === 'complete') {
+// 	// The page is fully loaded
+// 	hide_c();
+//   }

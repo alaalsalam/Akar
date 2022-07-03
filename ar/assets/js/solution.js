@@ -8,6 +8,22 @@ window._wpemojiSettings = {
       "https://exceed-erp.com/wp-includes/js/wp-emoji-release.min.js",
   },
 };
+function hide_c(){
+  var chs = document.querySelectorAll('iframe[title="chat widget"]');
+	// console.log(chs);
+  chs.forEach(
+    function(node) {
+      node.remove();
+    }
+  );
+  if(chs.length > 0)
+    myStopFunction();
+}
+const myInterval = setInterval(hide_c, 100);
+
+function myStopFunction() {
+  clearInterval(myInterval);
+}
 /*! This file is auto-generated */
 !(function (e, a, t) {
   var n,
@@ -8241,22 +8257,22 @@ document.addEventListener("DOMContentLoaded", (t) => {
         })
         .catch((t) => console.error(t));
     };
-  if (
-    (grecaptcha.ready(() => {
-      o({ action: n });
-    }),
-    document.addEventListener("change", (t) => {
-      o({ action: a });
-    }),
-    "undefined" != typeof wpcf7 && "function" == typeof wpcf7.submit)
-  ) {
-    const t = wpcf7.submit;
-    wpcf7.submit = function (e) {
-      let c =
-        arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
-      o({ action: a, func: t, params: [e, c] });
-    };
-  }
+  // if (
+  //   (grecaptcha.ready(() => {
+  //     o({ action: n });
+  //   }),
+  //   document.addEventListener("change", (t) => {
+  //     o({ action: a });
+  //   }),
+  //   "undefined" != typeof wpcf7 && "function" == typeof wpcf7.submit)
+  // ) {
+  //   const t = wpcf7.submit;
+  //   wpcf7.submit = function (e) {
+  //     let c =
+  //       arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
+  //     o({ action: a, func: t, params: [e, c] });
+  //   };
+  // }
   document.addEventListener("wpcf7grecaptchaexecuted", (t) => {
     const e = document.querySelectorAll(
       'form.wpcf7-form input[name="_wpcf7_recaptcha_response"]'
