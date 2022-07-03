@@ -2726,3 +2726,189 @@ button.collapsible.active:after {
 .detail{
   border-bottom: 1px solid;
 }
+
+/* Home slider */
+
+.homeTopSection {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: 524px 2fr;
+  grid-gap: 10px 0;
+  grid-area: a;
+  margin: 30px 0
+}
+
+.homeTopSection-image {
+  grid-area: 1/1/3/2;
+  width: 100%;
+  
+}
+.homeTopSection-image img{
+  width: 100%;
+  
+}
+
+.homeTopSection-title {
+  grid-area: 1/2/2/3;
+  -ms-flex-item-align: center;
+  align-self: center;
+  justify-self: self-start;
+  background-color: #ff7007;
+  padding: 105px 27px;
+  width: 45%
+}
+
+.homeTopSection-title h2 {
+  font-size: 40px;
+  line-height: 49px;
+  color: #fff;
+  font-weight: 800
+}
+
+.homeTopSection-text {
+  grid-area: 2/2/3/3;
+  -ms-flex-item-align: center;
+  align-self: center;
+  justify-self: center;
+  width: 62%
+}
+
+.homeTopSection-text p {
+  font-size: 15px;
+  text-align: left;
+  line-height: 23px;
+  color: #696563;
+  padding-bottom: 40px
+}
+
+.homeTopSection-text button {
+  width: 220px;
+  height: auto;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding: 0;
+  text-align: left;
+  position: relative
+}
+
+.homeTopSection-text button span {
+  font-size: 17px;
+  text-transform: uppercase;
+  line-height: 21px;
+  text-align: left;
+  color: #ff7007;
+  font-weight: 300
+}
+
+.homeTopSection-text button .orangeArrow {
+  display: block;
+  position: absolute;
+  width: 85px;
+  height: 1px;
+  background-color: #ff7007;
+  top: 12px;
+  right: 0
+}
+
+.homeTopSection-text button .orangeArrow:before {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 1px;
+  top: 6px;
+  right: -1px;
+  background-color: #ff7007;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+  transform: rotate(-45deg)
+}
+
+.homeTopSection-text button .orangeArrow:after {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 1px;
+  top: -5px;
+  right: -1px;
+  background-color: #ff7007;
+  transform: rotate(45deg);
+}
+.homeTopSection {
+  margin-bottom: 0;
+  display: block
+}
+
+.homeTopSection-image {
+  width: 35%;
+  float: left;
+  position: relative;
+  overflow: hidden;
+  height: 800px
+}
+
+.homeTopSection-image img {
+  width: 100%;
+  height: auto
+}
+
+.homeTopSection-title {
+  width: 40%;
+  position: relative;
+  height: 300px;
+  -ms-flex-item-align: center;
+  background-color: #ff7007;
+  padding: 5% 27px;
+  width: 45%
+}
+
+.homeTopSection-title h2 {
+  line-height: 45px;
+  position: static;
+  top: 50%;
+  left: 10%;
+  display: block
+}
+
+.homeTopSection-text {
+  margin-left: 18%;
+  margin-top: 8%
+}
+
+.homeTopSection-text button .orangeArrow {
+  -webkit-transition: all .4s cubic-bezier(.645, .045, .355, 1);
+  -moz-transition: all .4s cubic-bezier(.645, .045, .355, 1);
+  -o-transition: all .4s cubic-bezier(.645, .045, .355, 1);
+  transition: all .4s cubic-bezier(.645, .045, .355, 1)
+}
+
+.homeTopSection-text button:hover .orangeArrow {
+  right: -10px
+}
+
+.homeTopSection-text ul li {
+  list-style: square inside
+}
+
+.homeslider {
+  width: 65% !important;
+  float: left;
+  padding-top: 3%;
+  position: relative
+}
+
+.homeTopSection-title h2 {
+  text-transform: uppercase
+}
+
+.homeslider .owl-dots {
+  position: absolute;
+  bottom: 10px;
+}
+.homeslider .owl-dots {
+  width: 40%;
+}
+
+
+iframe[title="chat widget"]{
+  display: none !important;
+}

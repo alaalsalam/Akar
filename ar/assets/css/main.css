@@ -244,6 +244,10 @@ section {
   [data-aos-delay] {
     transition-delay: 0 !important;
   }
+  .homeslider-section{
+    display: none;
+ 
+}
 }
 
 /*--------------------------------------------------------------
@@ -2627,7 +2631,7 @@ section {
   -ms-flex-item-align: center;
   align-self: center;
   justify-self: self-start;
-  background-color: #ff7007;
+  background-color: var(--color-primary);
   padding: 105px 27px;
   width: 45%
 }
@@ -2649,10 +2653,10 @@ section {
 
 .homeTopSection-text p {
   font-size: 15px;
-  text-align: left;
+  text-align: right;
   line-height: 23px;
   color: #696563;
-  padding-bottom: 40px
+  padding-bottom: 10px
 }
 
 .homeTopSection-text button {
@@ -2662,7 +2666,7 @@ section {
   border: none;
   outline: none;
   padding: 0;
-  text-align: left;
+  text-align: right;
   position: relative
 }
 
@@ -2670,8 +2674,8 @@ section {
   font-size: 17px;
   text-transform: uppercase;
   line-height: 21px;
-  text-align: left;
-  color: #ff7007;
+  text-align: right;
+  color: var(--color-primary);
   font-weight: 300
 }
 
@@ -2680,9 +2684,9 @@ section {
   position: absolute;
   width: 85px;
   height: 1px;
-  background-color: #ff7007;
+  background-color: var(--color-primary);
   top: 12px;
-  right: 0
+  left: 0
 }
 
 .homeTopSection-text button .orangeArrow:before {
@@ -2691,10 +2695,10 @@ section {
   width: 14px;
   height: 1px;
   top: 6px;
-  right: -1px;
-  background-color: #ff7007;
+  left: -1px;
+  background-color: var(--color-primary);
   box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
-  transform: rotate(-45deg)
+  transform: rotate(45deg)
 }
 
 .homeTopSection-text button .orangeArrow:after {
@@ -2703,9 +2707,9 @@ section {
   width: 14px;
   height: 1px;
   top: -5px;
-  right: -1px;
-  background-color: #ff7007;
-  transform: rotate(45deg);
+  left: -1px;
+  background-color: var(--color-primary);
+  transform: rotate(135deg);
 }
 .homeTopSection {
   margin-bottom: 0;
@@ -2714,7 +2718,7 @@ section {
 
 .homeTopSection-image {
   width: 35%;
-  float: left;
+  float: right;
   position: relative;
   overflow: hidden;
   height: 800px
@@ -2728,9 +2732,9 @@ section {
 .homeTopSection-title {
   width: 40%;
   position: relative;
-  height: 300px;
+  height: auto;
   -ms-flex-item-align: center;
-  background-color: #ff7007;
+  background-color: var(--color-primary);
   padding: 5% 27px;
   width: 45%
 }
@@ -2744,7 +2748,7 @@ section {
 }
 
 .homeTopSection-text {
-  margin-left: 18%;
+  margin-right: 18%;
   margin-top: 8%
 }
 
@@ -2756,7 +2760,7 @@ section {
 }
 
 .homeTopSection-text button:hover .orangeArrow {
-  right: -10px
+  left: -10px
 }
 
 .homeTopSection-text ul li {
@@ -2782,7 +2786,14 @@ section {
   width: 40%;
 }
 
-
-iframe[title="chat widget"]{
-  display: none !important;
+.slideitem{
+  direction: rtl;
 }
+.slideitem button{
+  direction: rtl;
+}
+
+
+/* iframe[title="chat widget"]{
+  display: none !important;
+} */
