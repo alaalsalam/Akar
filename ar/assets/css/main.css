@@ -2461,7 +2461,7 @@ section {
 
 .blog .comments .reply-form input:focus {
   box-shadow: none;
-  border-color: rgba(254, 185, 0, 0.8);
+  border-color: #feb900cc;
 }
 
 .blog .comments .reply-form textarea {
@@ -2743,7 +2743,7 @@ section {
   line-height: 45px;
   position: static;
   top: 50%;
-  left: 10%;
+  right: 10%;
   display: block
 }
 
@@ -2769,9 +2769,12 @@ section {
 
 .homeslider {
   width: 65% !important;
-  float: left;
+  float: right;
   padding-top: 3%;
   position: relative
+}
+.homeslider .slideitem {
+  direction: rtl
 }
 
 .homeTopSection-title h2 {
