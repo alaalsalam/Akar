@@ -6,12 +6,12 @@
 		<meta charset="utf-8">
 		<meta content="width=device-width, initial-scale=1.0" name="viewport">
 	  
-		<title>About Us</title>
+		<title>AKAR - عن الشركة</title>
 		<meta content="" name="description">
 		<meta content="" name="keywords">
 	  
 		<!-- Favicons -->
-		<link href="assets/img/favicon.png" rel="icon">
+		<link href="assets/img/logo.png" rel="icon">
 		<link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 	  
 		<!-- Google Fonts -->
@@ -29,7 +29,7 @@
 	  
 	   <!-- <link href="assets/css/main_solution.css" rel="stylesheet">
   <link href="assets/css/solution.css" rel="stylesheet"> -->
-		<link href="assets/css/main_about.css" rel="stylesheet">
+		<link href="assets/css/main.css" rel="stylesheet">
 		<link href="assets/css/about.css" rel="stylesheet">
 		<script type='text/javascript' src='https://code.jquery.com/jquery-3.3.1.min.js' id='jquery-js'></script> 
 	  
@@ -84,13 +84,11 @@
 	<!-- ======= about Section ======= -->
 
 
-	<section class="container">
-		<h6 class="breadCrumbNav"><a
-				href="#">الرئيسية</a> / <span
-				class="page-active">عن الشركة</span></h6>
-		<!-- <h1 class="mainTitle wow fadeInDown" data-wow-delay="0.3s"
-			style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInDown;">عن الشركة</h1> -->
-	</section>
+	<!-- <section class="container">
+		
+		 <h1 class="mainTitle wow fadeInDown" data-wow-delay="0.3s"
+			style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInDown;">عن الشركة</h1> 
+	</section> -->
 	<section class="about-intro">
 		<h2 data-scroll-speed="3" class="wow fadeInUp" data-wow-delay="0.3s"
 			style="transform: translateY(0px); visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">عن
@@ -125,9 +123,7 @@
 				بمنطقتنا العربية وبحيث نصبح فاعلين في صنع هذه التقنيات ولا نتوقف فقط عند استهلاك تقنيات نستوردها من
 				الخارج.</div>
 		</div>
-		<div class="vision vision-item" data-scroll-speed="5" style="transform: translateY(0px);">
-			
-		</div>
+		
 		<div class="mission vision-item" style="background:#df050500">
 			<h4 class="wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;"></h4>
 			<div class="vision-text wow fadeInUp" data-wow-delay="0.6s"
@@ -378,6 +374,24 @@
 
 
   <!-- Vendor JS Files -->
+  <script>
+	function hide_c(){
+		var chs = document.querySelectorAll('iframe[title="chat widget"]');
+		
+		chs.forEach(
+			function(node) {
+			node.remove();
+			}
+		);
+		if(chs.length > 0)
+			myStopFunction();
+	}
+	const myInterval = setInterval(hide_c, 100);
+
+	function myStopFunction() {
+		clearInterval(myInterval);
+	}
+  </script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>

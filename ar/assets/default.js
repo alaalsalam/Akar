@@ -50,13 +50,13 @@
 
 		var s0=document.getElementsByTagName('script')[0];
 
-		for (var i = 0; i < files.length; i++) {
-			var s1 = document.createElement('script');
-			s1.src= files[i];
-			s1.charset='UTF-8';
-			s1.setAttribute('crossorigin','*');
-			s0.parentNode.insertBefore(s1,s0);
-		}
+		// for (var i = 0; i < files.length; i++) {
+		// 	var s1 = document.createElement('script');
+		// 	s1.src= files[i];
+		// 	s1.charset='UTF-8';
+		// 	s1.setAttribute('crossorigin','*');
+		// 	s0.parentNode.insertBefore(s1,s0);
+		// }
 	}
 	if (document.readyState === 'complete') {
 		l();
@@ -68,21 +68,3 @@
 })(window);
 
 })(window);
-// // document.addEventListener("load", hide_c)
-// function hide_c(){
-// 	var script = document.createElement("script");
-// 	script.innerHTML = `
-// 	var chs = document.querySelectorAll('iframe[title="chat widget"]');
-// 	console.log(chs);
-// 	`;
-// }
-// document.onreadystatechange = () => {
-// 	if (document.readyState === 'complete') {
-// 	  // document ready
-// 	  hide_c();
-// 	}
-//   };
-// if (document.readyState === 'complete') {
-// 	// The page is fully loaded
-// 	hide_c();
-//   }

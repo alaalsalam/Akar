@@ -7094,6 +7094,7 @@ function wpda_rest_api(path, data) {
     $(".tabslinks.responvetabs").slideUp();
     $(".tabslinks li a").attr("href", "");
     $(".tabslinks li a, .responvetabs li a").click(function () {
+      window.scrollTo(0, 350);
       var t = $(this).attr("data-target");
       $(".tabs > div").removeClass("active");
       $(t).addClass("active");
@@ -7102,11 +7103,13 @@ function wpda_rest_api(path, data) {
       var txt = $(this).parent().parent().find(".active > a").text();
       $(".tabstitle").text(txt);
       $(".tabslinks.responvetabs").slideUp();
+      
       return false;
       $([document.documentElement, document.body]).animate(
         { scrollTop: $(".solutions").offset().top },
         700
       );
+      
     });
     $(".tabslinks li:first-child, .tabs > div:first-child").addClass("active");
     if (location.hash != "") {
