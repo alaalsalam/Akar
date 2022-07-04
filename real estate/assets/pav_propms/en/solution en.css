@@ -21319,3 +21319,11 @@
 				margin-bottom: 20%
 			}
 		}
+		@media (max-width: 800px) {
+			.tabstitle:first-child {
+				display: none !important;
+			}
+			.solutions-right h2{
+				height: 170px;
+			}
+		}

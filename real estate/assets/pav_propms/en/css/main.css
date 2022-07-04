@@ -2632,7 +2632,7 @@ section {
   -ms-flex-item-align: center;
   align-self: center;
   justify-self: self-start;
-  background-color: var(--color-primary);
+  background-color: #ffc732;
   padding: 105px 27px;
   width: 45%
 }
@@ -2654,7 +2654,7 @@ section {
 
 .homeTopSection-text p {
   font-size: 15px;
-  text-align: right;
+  text-align: left;
   line-height: 23px;
   color: #696563;
   padding-bottom: 10px
@@ -2667,7 +2667,7 @@ section {
   border: none;
   outline: none;
   padding: 0;
-  text-align: right;
+  text-align: left;
   position: relative
 }
 
@@ -2675,8 +2675,8 @@ section {
   font-size: 17px;
   text-transform: uppercase;
   line-height: 21px;
-  text-align: right;
-  color: var(--color-primary);
+  text-align: left;
+  color: #ffc732;
   font-weight: 300
 }
 
@@ -2685,9 +2685,9 @@ section {
   position: absolute;
   width: 85px;
   height: 1px;
-  background-color: var(--color-primary);
+  background-color: #ffc732;
   top: 12px;
-  left: 0
+  right: 0
 }
 
 .homeTopSection-text button .orangeArrow:before {
@@ -2696,10 +2696,10 @@ section {
   width: 14px;
   height: 1px;
   top: 6px;
-  left: -1px;
-  background-color: var(--color-primary);
+  right: -1px;
+  background-color: #ffc732;
   box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
-  transform: rotate(45deg)
+  transform: rotate(-45deg)
 }
 
 .homeTopSection-text button .orangeArrow:after {
@@ -2708,9 +2708,9 @@ section {
   width: 14px;
   height: 1px;
   top: -5px;
-  left: -1px;
-  background-color: var(--color-primary);
-  transform: rotate(135deg);
+  right: -1px;
+  background-color: #ffc732;
+  transform: rotate(45deg);
 }
 .homeTopSection {
   margin-bottom: 0;
@@ -2719,7 +2719,7 @@ section {
 
 .homeTopSection-image {
   width: 35%;
-  float: right;
+  float: left;
   position: relative;
   overflow: hidden;
   height: 800px
@@ -2735,7 +2735,7 @@ section {
   position: relative;
   height: auto;
   -ms-flex-item-align: center;
-  background-color: var(--color-primary);
+  background-color: #ffc732;
   padding: 5% 27px;
   width: 45%
 }
@@ -2744,12 +2744,12 @@ section {
   line-height: 45px;
   position: static;
   top: 50%;
-  right: 10%;
+  left: 10%;
   display: block
 }
 
 .homeTopSection-text {
-  margin-right: 18%;
+  margin-left: 18%;
   margin-top: 8%
 }
 
@@ -2761,7 +2761,7 @@ section {
 }
 
 .homeTopSection-text button:hover .orangeArrow {
-  left: -10px
+  right: -10px
 }
 
 .homeTopSection-text ul li {
@@ -2770,12 +2770,9 @@ section {
 
 .homeslider {
   width: 65% !important;
-  float: right;
+  float: left;
   padding-top: 3%;
   position: relative
-}
-.homeslider .slideitem {
-  direction: rtl
 }
 
 .homeTopSection-title h2 {
@@ -2789,14 +2786,14 @@ section {
 .homeslider .owl-dots {
   width: 40%;
 }
-
-.slideitem{
-  direction: rtl;
+@media screen and (max-width: 768px) {
+  [data-aos-delay] {
+    transition-delay: 0 !important;
+  }
+  .homeslider-section{
+    display: none;
+  }
 }
-.slideitem button{
-  direction: rtl;
-}
-
 
 /* iframe[title="chat widget"]{
   display: none !important;
